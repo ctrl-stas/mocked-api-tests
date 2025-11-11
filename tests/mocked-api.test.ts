@@ -3,7 +3,7 @@ import axios from "axios";
 
 // 👇 Мокаем модуль axios
 vi.mock("axios");
-const mockedAxios = axios as jest.Mocked<typeof axios>;
+const mockedAxios = vi.mocked(axios);
 
 interface User {
   id: number;
